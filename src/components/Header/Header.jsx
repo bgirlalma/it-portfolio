@@ -1,29 +1,19 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
-import sprite from 'assets/sprite.svg';
+import Logo from './Logo/logo';
+import HeaderNavigate from './Navigate/headerNav';
+import { IoMenu } from 'react-icons/io5';
 
 export const Header = () => {
-
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <div>
+      <Logo />
+      <div>
+        <IoMenu />
+        <HeaderNavigate />
+      </div>
+
+      <div>
+        <HeaderNavigate />
+      </div>
+    </div>
   );
 };
