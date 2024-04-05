@@ -23,6 +23,11 @@ export const MenuMobile = styled.div`
   background-color: #f8f8f8;
   z-index: 1000;
   padding: 20px;
+  transition: margin-right 1s easy;
+
+  @media screen and (min-width: 450px) {
+    width: 50%;
+  }
 `;
 
 export const CloseButton = styled.button`

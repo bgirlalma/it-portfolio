@@ -2,6 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 import MainImage from '../src/components/Image/OIP.jpg'
 
 export const GlobalStyled = createGlobalStyle`
+:root{
+  --main-font-family: 'Roboto', sans-serif;
+  --black-color: #000;
+}
 body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen', sans-serif;
