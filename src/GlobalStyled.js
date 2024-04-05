@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import MainImage from '../src/components/Image/OIP.jpg'
 
 export const GlobalStyled = createGlobalStyle`
 body {
   margin: 0;
-  padding: 20px;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   box-sizing: border-box;
+  background-image: url(${MainImage});
+  
 }
 
 code {
