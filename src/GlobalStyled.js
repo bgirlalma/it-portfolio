@@ -1,16 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
-import MainImage from '../src/components/Image/OIP.jpg'
+// import MainImage from '../src/components/Image/OIP.jpg'
 
 export const GlobalStyled = createGlobalStyle`
 :root{
   --main-font-family: 'Roboto', sans-serif;
   --black-color: #000;
+  --white-color: #f8f8f8;
 }
 body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   box-sizing: border-box;
-  background-image: url(${MainImage});
+background-color: var(--black-color);
   
 }
 
