@@ -6,6 +6,8 @@ export const GlobalStyled = createGlobalStyle`
   --main-font-family: 'Roboto', sans-serif;
   --black-color: #000;
   --white-color: #f8f8f8;
+  --active-color: #E4080A;
+  --link-color: #060270;
 }
 body {
   margin: 0;

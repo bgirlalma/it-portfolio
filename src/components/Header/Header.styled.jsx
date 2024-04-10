@@ -2,16 +2,30 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  @media screen and (min-width: 568px) {
+    max-width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
-export const WrappMenuContainer = styled.div``;
+export const WrappMenuContainer = styled.div`
+  
+`;
 
 export const ButtonMenu = styled.button`
   border: none;
   background-color: inherit;
   padding: 0;
+  margin-right: 20px;
+
+  @media screen and (min-width: 568px) {
+    display: none;
+  }
 `;
 
 export const MenuMobile = styled.div`
@@ -23,10 +37,18 @@ export const MenuMobile = styled.div`
   background-color: #f8f8f8;
   z-index: 1000;
   padding: 20px;
-  transition: margin-right 1s easy;
+  transition: right 1s ease;
 
   @media screen and (min-width: 450px) {
     width: 50%;
+  }
+
+  @media screen and (min-width: 568px) {
+    width: 50%;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 767px) {
   }
 `;
 
@@ -44,4 +66,8 @@ margin-top: 40px;
 
 export const TabletContainer = styled.div`
   display: none;
+
+  @media screen and (min-width: 568px) {
+    display: flex;
+  }
 `;
