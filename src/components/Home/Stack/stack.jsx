@@ -1,60 +1,80 @@
-
+import { CSSsvg } from './Icons/css';
+import { FirebaseSvg } from './Icons/firebase';
+import { GitSvg } from './Icons/git';
+import { HTMLsvg } from './Icons/html';
+import { JSsvg } from './Icons/js';
+import { MongoDBsvg } from './Icons/mongodb';
+import { NodeSvg } from './Icons/node';
+import { PHPsvg } from './Icons/php';
+import { ReactSvg } from './Icons/react';
+import { SassSvg } from './Icons/sass';
+import { CardContainer, Card, CardTitle } from './stack.styled';
 const Stack = () => {
     return (
-      <div>
-        <ul>
-          <li>
-            <h3>
+      <>
+        <CardContainer>
+          <Card>
+            <HTMLsvg />
+            <CardTitle>
               <a href="https://www.w3schools.com/html/">HTML</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <CSSsvg />
+            <CardTitle>
               <a href="https://www.w3schools.com/Css/">CSS</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <SassSvg />
+            <CardTitle>
               <a href="https://sass-lang.com/">SASS</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <JSsvg />
+            <CardTitle>
               <a href="https://www.w3schools.com/js/DEFAULT.asp">JavaScript</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <ReactSvg />
+            <CardTitle>
               <a href="https://react.dev/">React</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <NodeSvg />
+            <CardTitle>
               <a href="https://nodejs.org/en">Node</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <PHPsvg />
+            <CardTitle>
               <a href="https://www.php.net/">PHP</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <MongoDBsvg />
+            <CardTitle>
               <a href="https://www.mongodb.com/">MongoDB</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <FirebaseSvg />
+            <CardTitle>
               <a href="https://firebase.google.com/">Firebase</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
+            </CardTitle>
+          </Card>
+          <Card>
+            <GitSvg />
+            <CardTitle>
               <a href="https://git-scm.com/">Git</a>
-            </h3>
-          </li>
-        </ul>
-      </div>
+            </CardTitle>
+          </Card>
+        </CardContainer>
+      </>
     );
 }
 

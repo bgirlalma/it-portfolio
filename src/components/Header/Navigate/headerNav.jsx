@@ -7,9 +7,12 @@ const HeaderNavigate = ({ handleNavlinkClick }) => {
   const location = useLocation();
 
   //створюємо локальний стейт, отримуємо поточний url за допомогою localStorage.getItem('currentPath'). Якщо значення === null, використовуємо location.pathname
-  const [, setLocation] = useState(() => {
-    return localStorage.getItem('currentPath') || location.pathname;
-  });
+   const [, setLocation] = useState(() => {
+     const storedPath = localStorage.getItem('currentPath');
+     return storedPath !== null && storedPath !== undefined
+       ? storedPath
+       : location.pathname;
+   });
 
   //оновлюємо currentPath та зберігаємо його в локальному сховищі
   const updatePath = (path) => {
