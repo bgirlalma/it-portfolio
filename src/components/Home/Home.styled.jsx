@@ -31,10 +31,38 @@ export const Container = styled.div`
     width: 768px;
     height: 400px;
   }
+
+  @media screen and (min-width: 1000px) {
+    width: 960px;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1160px;
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: unset;
+    width: 100%;
+    height: 700px;
+    margin-left: unset;
+    margin-right: unset;
+  }
 `;
 
 export const Content = styled.div`
+  @media screen and (min-width: 1200px) {
+    padding-top: 150px;
+  }
 
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%)
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -62,8 +90,13 @@ export const HomeTitle = styled.h1`
   }
 
   @media screen and (min-width: 1000px) {
+    max-width: 650px;
     font-size: 38px;
     justify-content: inherit;
+    padding: 100px 0 0 80px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
   }
 `;
 
@@ -98,7 +131,19 @@ export const HomeDesc = styled.p`
   }
 
   @media screen and (min-width: 1000px) {
+    max-width: 700px;
     font-size: 30px;
+    padding-left: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 770px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 940px;
+   
   }
 `;
 

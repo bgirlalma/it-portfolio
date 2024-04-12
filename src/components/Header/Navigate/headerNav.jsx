@@ -3,18 +3,21 @@ import { ListContainer, ListNavLink } from './headerNav.styled';
 import { useLocation } from 'react-router-dom';
 
 const HeaderNavigate = ({ handleNavlinkClick }) => {
-  //отримуємо поточний url
+  //get current url
   const location = useLocation();
 
-  //створюємо локальний стейт, отримуємо поточний url за допомогою localStorage.getItem('currentPath'). Якщо значення === null, використовуємо location.pathname
-   const [, setLocation] = useState(() => {
-     const storedPath = localStorage.getItem('currentPath');
-     return storedPath !== null && storedPath !== undefined
-       ? storedPath
-       : location.pathname;
-   });
+  //got info with currentPath
+  const storedPath = localStorage.getItem('currentPath');
 
-  //оновлюємо currentPath та зберігаємо його в локальному сховищі
+  //if storedPath !== null/undefined show storedPath. If storedPath === null/undefined show location.pathname
+  const initialPath =
+    storedPath !== null && storedPath !== undefined
+      ? storedPath
+      : location.pathname;
+
+  const [, setLocation] = useState(initialPath);
+
+  //update currentPath and save in the localStorage
   const updatePath = (path) => {
     setLocation(path);
     localStorage.setItem('currentPath', path);
@@ -24,10 +27,10 @@ const HeaderNavigate = ({ handleNavlinkClick }) => {
     const handleLocationChange = () => {
       updatePath(location.pathname);
     };
-    //реєструємо слухача подій при кліку на іншу сторінку
+    //registration listener event
     window.addEventListener('popstate', handleLocationChange);
 
-    //видаляємо слухача подій
+    //delete listener event
     return () => {
       window.removeEventListener('popstate', handleLocationChange);
     };

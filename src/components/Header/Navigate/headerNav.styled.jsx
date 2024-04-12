@@ -12,11 +12,12 @@ export const ListContainer = styled.ul`
 
 const active = 'active';
 
-export const ListNavLink = styled(NavLink).attrs(active)`
+export const ListNavLink = styled(NavLink)`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 28px;
   color: var(--black-color);
+  text-decoration: none;
 
   &.${active} {
     color: var(--active-color);
@@ -25,5 +26,9 @@ export const ListNavLink = styled(NavLink).attrs(active)`
   @media screen and (min-width: 568px) {
     font-size: 18px;
     color: var(--white-color);
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 28px;
   }
 `;

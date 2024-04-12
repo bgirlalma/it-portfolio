@@ -11,6 +11,22 @@ export const HeaderContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: 780px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    max-width: 1000px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
 `;
 
 export const WrappMenuContainer = styled.div`

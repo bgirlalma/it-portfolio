@@ -11,9 +11,23 @@ export const CardContainer = styled.ul`
 
   @media screen and (min-width: 568px) {
     max-width: unset;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1000px) {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
   }
 `;
 
@@ -28,7 +42,10 @@ export const Card = styled.li`
 
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 10px;
+
+  @media screen and (min-width: 1000px) {
+   width: 100%;
+  }
 `;
 
 export const CardTitle = styled.h3`

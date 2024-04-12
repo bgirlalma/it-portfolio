@@ -1,26 +1,26 @@
 export const MongoDBsvg = () => {
   return (
     <svg
-  id="Layer_1"
-  style={{ enableBackground: 'new 0 0 512 146' }}
-  version="1.1"
-  viewBox="0 0 512 146"
-  xmlSpace="preserve"
-  xmlns="http://www.w3.org/2000/svg"
-		  xmlnsXlink="http://www.w3.org/1999/xlink"
-		  width='102'
-		  height='42'
->
-  <style>
-    {`
-    .st0 { fill: #8E714E; }
-    .st1 { fill: #442D22; }
+      id="Layer_1"
+      style={{ enableBackground: 'new 0 0 512 146' }}
+      version="1.1"
+      viewBox="0 0 512 146"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="102"
+      height="42"
+    >
+      <style>
+        {`
+    .st0 { fill: #fff; }
+    .st1 { fill: #fff; }
     .st2 { fill: #FFFFFF; }
     .st3 { fill: #A6A385; }
     .st4 { fill: #499D4A; }
     .st5 { fill: #58AA50; }
     `}
-  </style>
+      </style>
       <g>
         <g>
           <path
