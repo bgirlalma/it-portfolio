@@ -1,7 +1,8 @@
-import Home from "../../components/Home/home";
+
 
 
 import styled from "styled-components";
+import Home from "../../components/Home/Home";
 
 
 const HomePageContainer = styled.div`

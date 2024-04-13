@@ -9,7 +9,7 @@ export const CardContainer = styled.ul`
   margin-right: auto;
   padding-top: 40px;
 
-  @media screen and (min-width: 568px) {
+   @media screen and (min-width: 568px) {
     max-width: unset;
     display: flex;
     justify-content: center;
@@ -43,8 +43,14 @@ export const Card = styled.li`
   border: 1px solid #fff;
   border-radius: 20px;
 
+  transition: transform 0.5s easy;
+
+  &: hover {
+    transform: rotateY(90deg);
+  }
+
   @media screen and (min-width: 1000px) {
-   width: 100%;
+    width: 100%;
   }
 `;
 
