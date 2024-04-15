@@ -1,11 +1,20 @@
 import { HealthyHubSvg } from '../Photo/HealthyHub';
-import tasty from '../Photo/TASTY-TREATS.png'
+import tasty from '../Photo/TASTY-TREATS.png';
+import SimpleChocolate from '../Photo/chocolate-dek-2x.jpg'
 
 import {
-  CardProject,
-  ImageContainer, Image,
+  ListContainer,
+  CardProjectOne,
+  SimpleChocolateImageContainer,
+  SimpleChocolateImage,
   LinkCodeCardOne,
   LinkWebsiteCardOne,
+  CardProjectTwo,
+  ImageContainer,
+  Image,
+  LinkCodeCardTwo,
+  LinkWebsiteCardTwo,
+  CardProjectThree,
   SvgContainer,
   LinkContainer,
   LinkCode,
@@ -15,8 +24,42 @@ import {
 
 const ProjectItems = () => {
   return (
-    <ul>
-      <CardProject>
+    <ListContainer>
+      <CardProjectOne>
+        <div>
+          <SimpleChocolateImageContainer>
+            <SimpleChocolateImage
+              src={SimpleChocolate}
+              alt="Simple Chocolate"
+              width="250"
+              height="150"
+            />
+          </SimpleChocolateImageContainer>
+
+          <LinkContainer>
+            <LinkCodeCardOne href="https://github.com/777Roma777/team-project">
+              Code
+            </LinkCodeCardOne>
+
+            <LinkWebsiteCardOne href="https://777roma777.github.io/team-project/">
+              Website
+            </LinkWebsiteCardOne>
+          </LinkContainer>
+        </div>
+
+        <CardDesc>
+          Simple Chocolate - Website invitation to a master class on cooking
+          various types of chocolate. You can also order various chocolates
+          straight to your home. Simple Chocolate also provides recipes for
+          preparing various chocolates, offering you the opportunity to cook
+          your own chocolate creations.
+          <br />
+          In this project, i served as a developer. I developed the Hero
+          Section.
+        </CardDesc>
+      </CardProjectOne>
+
+      <CardProjectTwo>
         <CardDesc>
           TastyTreats - website for a master class on cooking various dishes.
           You can also Customize Your Meal with Ingredient Options and
@@ -32,18 +75,18 @@ const ProjectItems = () => {
           </ImageContainer>
 
           <LinkContainer>
-            <LinkCodeCardOne href="https://github.com/Michael-Zhinchyn/TASTY-TREATS">
+            <LinkCodeCardTwo href="https://github.com/Michael-Zhinchyn/TASTY-TREATS">
               Code
-            </LinkCodeCardOne>
+            </LinkCodeCardTwo>
 
-            <LinkWebsiteCardOne href="https://michael-zhinchyn.github.io/TASTY-TREATS/index.html">
+            <LinkWebsiteCardTwo href="https://michael-zhinchyn.github.io/TASTY-TREATS/index.html">
               Website
-            </LinkWebsiteCardOne>
+            </LinkWebsiteCardTwo>
           </LinkContainer>
         </div>
-      </CardProject>
+      </CardProjectTwo>
 
-      <CardProject>
+      <CardProjectThree>
         <div>
           <SvgContainer>
             <HealthyHubSvg />
@@ -71,8 +114,8 @@ const ProjectItems = () => {
           the Welcome page, Body Parameters Page, Recommended Food, and
           Graphicals.
         </CardDesc>
-      </CardProject>
-    </ul>
+      </CardProjectThree>
+    </ListContainer>
   );
 };
 

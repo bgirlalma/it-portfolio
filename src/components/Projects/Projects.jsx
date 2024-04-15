@@ -1,13 +1,16 @@
+import Button from "./Button/button";
 import ProjectItems from "./ProjectItems/items";
-import {Title}from './Projects.styled'
+import { Title } from './Projects.styled';
 
 const Projects = () => {
     return (
       <div>
-        <div>
-                <Title>Team Projects</Title>
+        <Button/>
+      
+          <Title>Team Projects</Title>
+          
                 <ProjectItems/>
-        </div>
+      
       </div>
     );
 }
