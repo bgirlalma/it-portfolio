@@ -1,9 +1,15 @@
+import ProjectItems from "./ProjectItems/items";
+import {Title}from './Projects.styled'
+
 const Projects = () => {
     return (
+      <div>
         <div>
-            <h1>Projects</h1>
+                <Title>Team Projects</Title>
+                <ProjectItems/>
         </div>
-    )
+      </div>
+    );
 }
 
 export default Projects;

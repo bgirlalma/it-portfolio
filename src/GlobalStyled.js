@@ -8,6 +8,11 @@ export const GlobalStyled = createGlobalStyle`
   --white-color: #f8f8f8;
   --active-color: #E4080A;
   --link-color: #060270;
+  --link-green-color: #9bb537;
+  --link-lite-green-color: #45ffbc;
+  --link-pink-color: #ffc4f7;
+  --link-black-color: #050505;
+  --backgroung-cards-color: #413E3E;
 }
 body {
   margin: 0;
