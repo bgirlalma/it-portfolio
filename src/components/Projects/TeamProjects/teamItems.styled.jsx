@@ -51,15 +51,24 @@ border-radius: 10px;
 `;
 
 export const LinkCodeCardOne = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 70px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
-
+  border: none;
+  padding: 0;
   background-color: var(--link-dark);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   &:hover {
     background-color: var(--hover-link-dark);
@@ -67,24 +76,33 @@ export const LinkCodeCardOne = styled.a`
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+   height: 50px;
   }
 `;
 
 export const LinkWebsiteCardOne = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 80px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
-
+  border: none;
+  padding: 0;
   background-color: var(--link-orange);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+    height: 50px;
   }
 
   &:hover {
@@ -136,19 +154,28 @@ border-radius: 10px;
 `;
 
 export const LinkCodeCardTwo = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 70px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
-
+  border: none;
+  padding: 0;
   background-color: var(--link-green-color);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+   height: 50px;
   }
 
   &:hover {
@@ -157,19 +184,28 @@ export const LinkCodeCardTwo = styled.a`
 `;
 
 export const LinkWebsiteCardTwo = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 80px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
-
+  border: none;
+  padding: 0;
   background-color: var(--link-black-color);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+    height: 50px;
   }
 
   &:hover {
@@ -222,18 +258,28 @@ export const LinkContainer = styled.div`
 `;
 
 export const LinkCode = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 70px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
+  border: none;
+  padding: 0;
   background-color: var(--link-pink-color);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+    height: 50px;
   }
 
   &:hover {
@@ -242,19 +288,28 @@ export const LinkCode = styled.a`
 `;
 
 export const LinkWebsite = styled.a`
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  width: 80px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 15px 0;
-  padding: 5px;
-
+  border: none;
+  padding: 0;
   background-color: var(--link-lite-green-color);
-  color: var(--white-color);
+
+  a {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white-color);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    padding: 8px;
+    height: 50px;
   }
 
   &:hover {

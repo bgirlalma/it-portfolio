@@ -20,7 +20,7 @@ import {
   LinkCode,
   LinkWebsite,
   CardDesc,
-} from './items.styled';
+} from './teamItems.styled';
 
 const ProjectItems = () => {
   return (
@@ -37,12 +37,12 @@ const ProjectItems = () => {
           </SimpleChocolateImageContainer>
 
           <LinkContainer>
-            <LinkCodeCardOne href="https://github.com/777Roma777/team-project">
-              Code
+            <LinkCodeCardOne type='button'>
+              <a href="https://github.com/777Roma777/team-project">Code</a>
             </LinkCodeCardOne>
 
-            <LinkWebsiteCardOne href="https://777roma777.github.io/team-project/">
-              Website
+            <LinkWebsiteCardOne type='button'>
+              <a href="https://777roma777.github.io/team-project/">Website</a>
             </LinkWebsiteCardOne>
           </LinkContainer>
         </div>
@@ -75,12 +75,16 @@ const ProjectItems = () => {
           </ImageContainer>
 
           <LinkContainer>
-            <LinkCodeCardTwo href="https://github.com/Michael-Zhinchyn/TASTY-TREATS">
-              Code
+            <LinkCodeCardTwo type='button'>
+              <a href="https://github.com/Michael-Zhinchyn/TASTY-TREATS">
+                Code
+              </a>
             </LinkCodeCardTwo>
 
-            <LinkWebsiteCardTwo href="https://michael-zhinchyn.github.io/TASTY-TREATS/index.html">
-              Website
+            <LinkWebsiteCardTwo type='button'>
+              <a href="https://michael-zhinchyn.github.io/TASTY-TREATS/index.html">
+                Website
+              </a>
             </LinkWebsiteCardTwo>
           </LinkContainer>
         </div>
@@ -93,12 +97,15 @@ const ProjectItems = () => {
           </SvgContainer>
 
           <LinkContainer>
-            <LinkCode href="https://github.com/AnnaHort/HealthyHub">
-              Code
+            <LinkCode type='button'>
+              <a href="https://github.com/AnnaHort/HealthyHub">Code</a>
             </LinkCode>
 
-            <LinkWebsite href="https://annahort.github.io/HealthyHub/">
-              Website
+            <LinkWebsite type='button'>
+              
+              <a href="https://annahort.github.io/HealthyHub/">
+                Website
+              </a>
             </LinkWebsite>
           </LinkContainer>
         </div>

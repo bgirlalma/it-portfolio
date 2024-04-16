@@ -1,16 +1,15 @@
 import Button from "./Button/button";
-import ProjectItems from "./ProjectItems/items";
+import ProjectItems from "./TeamProjects/teamItems";
 import { Title } from './Projects.styled';
+import OwmItems from "./OwmProjects/owmItems";
 
 const Projects = () => {
     return (
       <div>
-        <Button/>
-      
-          <Title>Team Projects</Title>
-          
-                <ProjectItems/>
-      
+        <Title>Team Projects</Title>
+        <Button />
+        <ProjectItems />
+        <OwmItems/>
       </div>
     );
 }
