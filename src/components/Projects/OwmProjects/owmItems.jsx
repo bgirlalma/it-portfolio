@@ -103,6 +103,24 @@ const OwmItems = () => {
           Node, LightBox2, MongoDB, Swiper.
         </OwnDesc>
       </OwnCardThree>
+
+      <li>
+        <OwnDesc></OwnDesc>
+        <div>
+          <ImageContainer>
+            <Image src="" alt="" />
+          </ImageContainer>
+
+          <ButtonLinkContainer>
+            <button type="button">
+              <a href=""></a>
+            </button>
+            <button type="button">
+              <a href=""></a>
+            </button>
+          </ButtonLinkContainer>
+        </div>
+      </li>
     </ListContainer>
   );
 };
