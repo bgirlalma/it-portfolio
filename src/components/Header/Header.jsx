@@ -33,7 +33,6 @@ export const Header = () => {
 
   //page navigation. Close modal menu
   const handleNavlinkClick = (path) => {
-     console.log('Navigating to:', path);
     navigate(path);
     setOpenMenu(false);
   };

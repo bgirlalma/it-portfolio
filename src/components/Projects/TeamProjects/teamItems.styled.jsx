@@ -47,7 +47,7 @@ export const SimpleChocolateImageContainer = styled.div`
 `;
 
 export const SimpleChocolateImage = styled.img`
-border-radius: 10px;
+  border-radius: 10px;
 `;
 
 export const LinkCodeCardOne = styled.a`
@@ -63,12 +63,10 @@ export const LinkCodeCardOne = styled.a`
   padding: 0;
   background-color: var(--link-dark);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   &:hover {
     background-color: var(--hover-link-dark);
@@ -76,7 +74,7 @@ export const LinkCodeCardOne = styled.a`
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-   height: 50px;
+    height: 50px;
   }
 `;
 
@@ -93,12 +91,10 @@ export const LinkWebsiteCardOne = styled.a`
   padding: 0;
   background-color: var(--link-orange);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -150,7 +146,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-border-radius: 10px;
+  border-radius: 10px;
 `;
 
 export const LinkCodeCardTwo = styled.a`
@@ -166,16 +162,14 @@ export const LinkCodeCardTwo = styled.a`
   padding: 0;
   background-color: var(--link-green-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-   height: 50px;
+    height: 50px;
   }
 
   &:hover {
@@ -196,12 +190,10 @@ export const LinkWebsiteCardTwo = styled.a`
   padding: 0;
   background-color: var(--link-black-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -213,7 +205,6 @@ export const LinkWebsiteCardTwo = styled.a`
   }
 `;
 //CARD Two END
-
 
 //CARD Three START
 export const CardProjectThree = styled.li`
@@ -270,12 +261,10 @@ export const LinkCode = styled.a`
   padding: 0;
   background-color: var(--link-pink-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -300,12 +289,10 @@ export const LinkWebsite = styled.a`
   padding: 0;
   background-color: var(--link-lite-green-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -329,5 +316,3 @@ export const CardDesc = styled.p`
 `;
 
 //CARD Three END
-
-

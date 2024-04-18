@@ -6,6 +6,8 @@ export const ButtonContainer = styled.div`
   margin-bottom: 30px;
 `;
 
+// const active = 'active';
+
 export const ButtonTeam = styled.button`
   position: relative;
   width: 100px;
@@ -14,11 +16,13 @@ export const ButtonTeam = styled.button`
   border: none;
   cursor: pointer;
 
-   font-family: var(--main-font-family);
+  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
-  color: var( --link-dark)
-  background-color: var(--white-color);
+  color: ${(props) =>
+    props.active === 'true' ? 'var(--white-color)' : 'var(--link-dark)'};
+  background-color: ${(props) =>
+    props.active === 'true' ? 'var(--active-color)' : 'var(--white-color)'};
 
   &::after {
     content: '';
@@ -36,7 +40,7 @@ export const ButtonTeam = styled.button`
     color: var(--white-color);
   }
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1000px) {
     height: 50px;
   }
 `;
@@ -51,16 +55,17 @@ export const ButtonOwn = styled.button`
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
-  color: var( --link-dark)
-
-  background-color: var(--white-color);
+  color: ${(props) =>
+    props.active === 'true' ? 'var(--white-color)' : 'var(--link-dark)'};
+  background-color: ${(props) =>
+    props.active === 'true' ? 'var(--active-color)' : 'var(--white-color)'};
 
   &:hover {
     background-color: var(--active-color);
     color: var(--white-color);
   }
 
-    @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1000px) {
     height: 50px;
   }
 `;

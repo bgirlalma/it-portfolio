@@ -1,17 +1,17 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 1100px){
+  @media screen and (min-width: 1100px) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
-    'oco oco oco . .'
-    '. . oct oct oct'
-    ' owt owt owt . .';
+    grid-template-areas:
+      'oco oco oco . .'
+      '. . oct oct oct'
+      ' owt owt owt . .'
+      '. . owf owf owf';
   }
 `;
 
@@ -25,10 +25,6 @@ export const OwmCardOne = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media screen and (min-width: 568px) {
     display: flex;
     gap: 20px;
@@ -40,7 +36,6 @@ export const OwmCardOne = styled.li`
     max-width: 768px;
   }
 `;
-
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -71,12 +66,10 @@ export const ButtonLinkCodeOne = styled.button`
   padding: 0;
   background-color: var(--link-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -96,12 +89,10 @@ export const ButtonLinkWebsiteOne = styled.button`
   padding: 0;
   background-color: var(--link-black-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -114,7 +105,6 @@ export const ButtonLinkWebsiteOne = styled.button`
 `;
 //card one end
 
-
 //card two start
 export const OwnCardTwo = styled.li`
   width: 100%;
@@ -124,10 +114,6 @@ export const OwnCardTwo = styled.li`
   padding: 20px 10px;
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -149,12 +135,10 @@ export const ButtonLinkCodeTwo = styled.button`
   padding: 0;
   background-color: var(--link-lite-green-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -174,12 +158,10 @@ export const ButtonLinkWebsiteTwo = styled.button`
   padding: 0;
   background-color: var(--link-turquoise-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -202,10 +184,6 @@ export const OwnCardThree = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media screen and (min-width: 568px) {
     display: flex;
     gap: 20px;
@@ -226,12 +204,10 @@ export const ButtonLinkCodeThree = styled.button`
   padding: 0;
   background-color: var(--link-turquoise-color);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -251,12 +227,10 @@ export const ButtonLinkWebsiteThree = styled.button`
   padding: 0;
   background-color: var(--link-orange);
 
-  a {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--white-color);
-  }
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -268,6 +242,74 @@ export const ButtonLinkWebsiteThree = styled.button`
   }
 `;
 //card three end
+
+//card four start
+export const OwnCardFour = styled.div`
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+  padding: 20px 10px;
+  background-color: var(--backgroung-cards-color);
+
+  @media screen and (min-width: 568px) {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-area: owf;
+    max-width: 768px;
+  }
+`;
+
+export const ButtonLinkCodeFour = styled.button`
+  width: 70px;
+  height: 40px;
+  border-radius: 15px 0;
+  border: none;
+  padding: 0;
+  background-color: var(--white-color);
+
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--link-dark);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  &:hover {
+    background-color: var(--hover-link-white);
+  }
+`;
+
+export const ButtonLinkWebsiteFour = styled.button`
+  width: 80px;
+  height: 40px;
+  border-radius: 15px 0;
+  border: none;
+  padding: 0;
+  background-color: var(--link-grey-color);
+
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  &:hover {
+    background-color: var(--hover-grey-color);
+  }
+`;
+//card four end
 
 export const OwnDesc = styled.p`
   font-family: var(--main-font-family);

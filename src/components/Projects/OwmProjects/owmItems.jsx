@@ -1,6 +1,7 @@
 import webstudio from '../Photo/hero-dek-2x.jpg';
 import BookApp from '../Photo/book-app.png';
-import Rio from '../Photo/rio.png'
+import Rio from '../Photo/rio.png';
+import LearnLingo from '../Photo/LearnLingo.png';
 import {
   ListContainer,
   OwmCardOne,
@@ -15,9 +16,14 @@ import {
     OwnCardThree,
     ButtonLinkCodeThree,
   ButtonLinkWebsiteThree,
+  OwnCardFour,
+  ButtonLinkCodeFour,
+  ButtonLinkWebsiteFour,
   OwnDesc,
 } from './owmItems.styled';
+
 const OwmItems = () => {
+
   return (
     <ListContainer>
       {/* card one start */}
@@ -28,14 +34,13 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            <ButtonLinkCodeOne type="button">
-              <a href="https://github.com/bgirlalma/goit-markup-hw-07">Code</a>
-            </ButtonLinkCodeOne>
-            <ButtonLinkWebsiteOne type="button">
-              <a href="https://bgirlalma.github.io/goit-markup-hw-07/">
+            
+              <ButtonLinkCodeOne href="https://github.com/bgirlalma/goit-markup-hw-07" target="_blank" rel="noopener noreferrer">Code</ButtonLinkCodeOne>
+          
+              <ButtonLinkWebsiteOne href="https://bgirlalma.github.io/goit-markup-hw-07/" target="_blank" rel="noopener noreferrer">
                 Website
-              </a>
-            </ButtonLinkWebsiteOne>
+              </ButtonLinkWebsiteOne>
+        
           </ButtonLinkContainer>
         </div>
 
@@ -61,16 +66,15 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            <ButtonLinkCodeTwo type="button">
-              <a href="https://github.com/bgirlalma/goit-react-hw-08-phonebook">
+            
+              <ButtonLinkCodeTwo href="https://github.com/bgirlalma/goit-react-hw-08-phonebook" target="_blank" rel="noopener noreferrer">
                 Code
-              </a>
-            </ButtonLinkCodeTwo>
-            <ButtonLinkWebsiteTwo type="button">
-              <a href="https://bgirlalma.github.io/goit-react-hw-08-phonebook/">
+              </ButtonLinkCodeTwo>
+            
+              <ButtonLinkWebsiteTwo href="https://bgirlalma.github.io/goit-react-hw-08-phonebook/" target="_blank" rel="noopener noreferrer">
                 Website
-              </a>
-            </ButtonLinkWebsiteTwo>
+              </ButtonLinkWebsiteTwo>
+          
           </ButtonLinkContainer>
         </div>
       </OwnCardTwo>
@@ -83,16 +87,16 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            <ButtonLinkCodeThree type="button">
-              <a href="https://github.com/bgirlalma/apartment-renovetion-website">
+            
+              <ButtonLinkCodeThree href="https://github.com/bgirlalma/apartment-renovetion-website" target="_blank" rel="noopener noreferrer">
                 Code
-              </a>
-            </ButtonLinkCodeThree>
-            <ButtonLinkWebsiteThree type="button">
-              <a href="https://bgirlalma.github.io/apartment-renovetion-website/">
+              </ButtonLinkCodeThree>
+          
+            
+              <ButtonLinkWebsiteThree href="https://bgirlalma.github.io/apartment-renovetion-website/" target="_blank" rel="noopener noreferrer">
                 Website
-              </a>
-            </ButtonLinkWebsiteThree>
+              </ButtonLinkWebsiteThree>
+          
           </ButtonLinkContainer>
         </div>
 
@@ -104,23 +108,33 @@ const OwmItems = () => {
         </OwnDesc>
       </OwnCardThree>
 
-      <li>
-        <OwnDesc></OwnDesc>
+      {/* card four start */}
+      <OwnCardFour>
+        <OwnDesc>
+          Learn Lingo - application created for search a teachers for studing
+          foreign. It utilizes React, Firebase, Vite, React-router-dom.
+        </OwnDesc>
         <div>
           <ImageContainer>
-            <Image src="" alt="" />
+            <Image
+              src={LearnLingo}
+              alt="Learn Lingo"
+              width="250"
+              height="120"
+            />
           </ImageContainer>
 
           <ButtonLinkContainer>
-            <button type="button">
-              <a href=""></a>
-            </button>
-            <button type="button">
-              <a href=""></a>
-            </button>
+          
+              <ButtonLinkCodeFour href="https://github.com/bgirlalma/test-exercise-teacher-project" target="_blank" rel="noopener noreferrer">
+                Code
+              </ButtonLinkCodeFour>
+          
+              <ButtonLinkWebsiteFour href="#" target="_blank" rel="noopener noreferrer">Website</ButtonLinkWebsiteFour>
+          
           </ButtonLinkContainer>
         </div>
-      </li>
+      </OwnCardFour>
     </ListContainer>
   );
 };
