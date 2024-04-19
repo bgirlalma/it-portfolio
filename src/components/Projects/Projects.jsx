@@ -1,5 +1,5 @@
 import Button from './Button/button';
-import ProjectItems from './TeamProjects/teamItems';
+import ProjectItems from './TeamProjects/teamIProject';
 import { Title } from './Projects.styled';
 import OwmItems from './OwmProjects/owmItems';
 import { useState } from 'react';

@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: 1100px) {
     display: grid;
@@ -34,6 +32,12 @@ export const OwmCardOne = styled.li`
   @media screen and (min-width: 768px) {
     grid-area: oco;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: oco;
   }
 `;
 
@@ -124,6 +128,12 @@ export const OwnCardTwo = styled.li`
   @media screen and (min-width: 768px) {
     grid-area: oct;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: oct;
   }
 `;
 
@@ -193,6 +203,12 @@ export const OwnCardThree = styled.li`
   @media screen and (min-width: 768px) {
     grid-area: owt;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: owt;
   }
 `;
 
@@ -244,7 +260,7 @@ export const ButtonLinkWebsiteThree = styled.button`
 //card three end
 
 //card four start
-export const OwnCardFour = styled.div`
+export const OwnCardFour = styled.li`
   width: 100%;
   height: auto;
 
@@ -259,8 +275,13 @@ export const OwnCardFour = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    grid-area: owf;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: owf;
   }
 `;
 

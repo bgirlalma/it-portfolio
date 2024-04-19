@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
-  margin-left: auto;
-  margin-right: auto;
-
   @media screen and (min-width: 1100px) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -12,6 +9,7 @@ export const ListContainer = styled.ul`
       ' . . t t t'
       'th th th . . ';
   }
+
 `;
 
 //CARD One START
@@ -35,8 +33,13 @@ export const CardProjectOne = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    grid-area: o;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: o;
   }
 `;
 
@@ -129,8 +132,13 @@ export const CardProjectTwo = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    grid-area: t;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: t;
   }
 `;
 
@@ -227,8 +235,13 @@ export const CardProjectThree = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    grid-area: th;
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-area: th;
   }
 `;
 export const SvgContainer = styled.div`
