@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ListContainer = styled.ul`
-
   @media screen and (min-width: 1100px) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -10,6 +9,13 @@ export const ListContainer = styled.ul`
       '. . oct oct oct'
       ' owt owt owt . .'
       '. . owf owf owf';
+  }
+
+  @media screen and (min-width: 1800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: unset;
+    gap: 20px;
   }
 `;
 
@@ -22,6 +28,10 @@ export const OwmCardOne = styled.li`
   padding: 20px 10px;
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
+
+  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -38,6 +48,13 @@ export const OwmCardOne = styled.li`
 
   @media screen and (min-width: 1100px) {
     grid-area: oco;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
   }
 `;
 
@@ -62,9 +79,14 @@ export const ButtonLinkContainer = styled.div`
   }
 `;
 
-export const ButtonLinkCodeOne = styled.button`
+export const ButtonLinkCodeOne = styled.a`
   width: 70px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -74,6 +96,11 @@ export const ButtonLinkCodeOne = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -85,9 +112,14 @@ export const ButtonLinkCodeOne = styled.button`
   }
 `;
 
-export const ButtonLinkWebsiteOne = styled.button`
+export const ButtonLinkWebsiteOne = styled.a`
   width: 80px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -97,6 +129,11 @@ export const ButtonLinkWebsiteOne = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -119,6 +156,10 @@ export const OwnCardTwo = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
+  box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+
   @media screen and (min-width: 568px) {
     display: flex;
     gap: 20px;
@@ -135,11 +176,23 @@ export const OwnCardTwo = styled.li`
   @media screen and (min-width: 1100px) {
     grid-area: oct;
   }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
+  }
 `;
 
-export const ButtonLinkCodeTwo = styled.button`
+export const ButtonLinkCodeTwo = styled.a`
   width: 70px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -149,6 +202,11 @@ export const ButtonLinkCodeTwo = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+   transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -160,9 +218,14 @@ export const ButtonLinkCodeTwo = styled.button`
   }
 `;
 
-export const ButtonLinkWebsiteTwo = styled.button`
+export const ButtonLinkWebsiteTwo = styled.a`
   width: 80px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -172,6 +235,11 @@ export const ButtonLinkWebsiteTwo = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+   transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -194,6 +262,10 @@ export const OwnCardThree = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
+  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+
   @media screen and (min-width: 568px) {
     display: flex;
     gap: 20px;
@@ -210,11 +282,23 @@ export const OwnCardThree = styled.li`
   @media screen and (min-width: 1100px) {
     grid-area: owt;
   }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
+  }
 `;
 
-export const ButtonLinkCodeThree = styled.button`
+export const ButtonLinkCodeThree = styled.a`
   width: 70px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -224,6 +308,11 @@ export const ButtonLinkCodeThree = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+   transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -235,9 +324,14 @@ export const ButtonLinkCodeThree = styled.button`
   }
 `;
 
-export const ButtonLinkWebsiteThree = styled.button`
+export const ButtonLinkWebsiteThree = styled.a`
   width: 80px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -247,6 +341,11 @@ export const ButtonLinkWebsiteThree = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+   transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -268,6 +367,10 @@ export const OwnCardFour = styled.li`
   padding: 20px 10px;
   background-color: var(--backgroung-cards-color);
 
+  box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+
   @media screen and (min-width: 568px) {
     display: flex;
     gap: 20px;
@@ -283,11 +386,23 @@ export const OwnCardFour = styled.li`
   @media screen and (min-width: 1100px) {
     grid-area: owf;
   }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
+  }
 `;
 
-export const ButtonLinkCodeFour = styled.button`
+export const ButtonLinkCodeFour = styled.a`
   width: 70px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -297,6 +412,11 @@ export const ButtonLinkCodeFour = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--link-dark);
+  cursor: pointer;
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -308,9 +428,14 @@ export const ButtonLinkCodeFour = styled.button`
   }
 `;
 
-export const ButtonLinkWebsiteFour = styled.button`
+export const ButtonLinkWebsiteFour = styled.a`
   width: 80px;
   height: 40px;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
   border-radius: 15px 0;
   border: none;
   padding: 0;
@@ -320,6 +445,11 @@ export const ButtonLinkWebsiteFour = styled.button`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+  cursor: pointer;
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;

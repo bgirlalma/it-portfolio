@@ -2,35 +2,45 @@ import Button from './Button/button';
 import ProjectItems from './TeamProjects/teamIProject';
 import { Title } from './Projects.styled';
 import OwmItems from './OwmProjects/owmItems';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
-  const [showOwnProjects, setShowOwnProjects] = useState(true);
-
   const navigate = useNavigate();
 
+  //set current value active tab with current path URL
+  const [activeTab, setActiveTab] = useState(
+    location.pathname.includes('own') ? 'own' : 'team'
+  );
 
-  const handleOpenOwnList = () => {
-    setShowOwnProjects(true);
-  };
+  //handler function click 
+  const handleButtonClick = (tab) => {
+    //set active tab
+    setActiveTab(tab)
 
-  const handleOpenTeamList = () => {
-    setShowOwnProjects(false);
-  };
-
-  const handleButtonClick = (path) => {
-    navigate(path)
+    //redirecting the user in the page
+    navigate(`/projects/${tab}`);
   }
+  
+  //check current path URL
+  useEffect(() => {
+   //if current path haven`t 'projects', set active tab 'Team'
+   if (!location.pathname.includes('projects')) {
+     setActiveTab('team');
+    }
+    
+    //update object when you change current path URL
+ }, [location.pathname]);
+  
   return (
     <div>
       <Title>Team Projects</Title>
       <Button
-        handleOpenOwnList={handleOpenOwnList}
-        handleOpenTeamList={handleOpenTeamList}
-        handleButtonClick={handleButtonClick}
+        activeTab={activeTab}
+       handleButtonClick={handleButtonClick}
       />
-      {showOwnProjects ? <OwmItems /> : <ProjectItems />}
+      {/* render project list fit current path */}
+      {activeTab === 'own' ? <OwmItems /> : <ProjectItems />}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.div`
@@ -6,12 +7,17 @@ export const ButtonContainer = styled.div`
   margin-bottom: 30px;
 `;
 
-// const active = 'active';
+const active = 'active';
 
-export const ButtonTeam = styled.button`
+export const ButtonTeam = styled(NavLink)`
   position: relative;
   width: 100px;
   height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 10px 0 0 10px;
   border: none;
   cursor: pointer;
@@ -19,10 +25,17 @@ export const ButtonTeam = styled.button`
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
-  color: ${(props) =>
-    props.active === 'true' ? 'var(--white-color)' : 'var(--link-dark)'};
-  background-color: ${(props) =>
-    props.active === 'true' ? 'var(--active-color)' : 'var(--white-color)'};
+  color: var(--link-dark);
+  background-color: var(--white-color);
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
+
+  &.${active} {
+    background-color: var(--active-color);
+    color: var(--white-color);
+  }
 
   &::after {
     content: '';
@@ -45,9 +58,14 @@ export const ButtonTeam = styled.button`
   }
 `;
 
-export const ButtonOwn = styled.button`
+export const ButtonOwn = styled(NavLink)`
   width: 100px;
   height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 0 10px 10px 0;
   border: none;
   cursor: pointer;
@@ -55,10 +73,17 @@ export const ButtonOwn = styled.button`
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
-  color: ${(props) =>
-    props.active === 'true' ? 'var(--white-color)' : 'var(--link-dark)'};
-  background-color: ${(props) =>
-    props.active === 'true' ? 'var(--active-color)' : 'var(--white-color)'};
+  color: var(--link-dark);
+  background-color: var(--white-color);
+
+  transition:
+    background-color 0.5s,
+    color 0.3s;
+
+  &.${active} {
+    background-color: var(--active-color);
+    color: var(--white-color);
+  }
 
   &:hover {
     background-color: var(--active-color);

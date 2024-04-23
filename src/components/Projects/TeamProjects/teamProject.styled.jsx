@@ -10,6 +10,13 @@ export const ListContainer = styled.ul`
       'th th th . . ';
   }
 
+  @media screen and (min-width: 1800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    unset;
+    gap: 20px;
+  }
 `;
 
 //CARD One START
@@ -21,6 +28,10 @@ export const CardProjectOne = styled.li`
   padding: 20px 10px;
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
+
+  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
 
   &:last-child {
     margin-bottom: 0;
@@ -40,6 +51,13 @@ export const CardProjectOne = styled.li`
 
   @media screen and (min-width: 1100px) {
     grid-area: o;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
   }
 `;
 
@@ -71,6 +89,10 @@ export const LinkCodeCardOne = styled.a`
   font-size: 18px;
   color: var(--white-color);
 
+    transition:
+    background-color 0.5s,
+    color 0.3s;
+
   &:hover {
     background-color: var(--hover-link-dark);
   }
@@ -99,6 +121,10 @@ export const LinkWebsiteCardOne = styled.a`
   font-size: 18px;
   color: var(--white-color);
 
+    transition:
+    background-color 0.5s,
+    color 0.3s;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     height: 50px;
@@ -121,6 +147,10 @@ export const CardProjectTwo = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
+  box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -139,6 +169,13 @@ export const CardProjectTwo = styled.li`
 
   @media screen and (min-width: 1100px) {
     grid-area: t;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
   }
 `;
 
@@ -175,6 +212,10 @@ export const LinkCodeCardTwo = styled.a`
   font-size: 18px;
   color: var(--white-color);
 
+    transition:
+    background-color 0.5s,
+    color 0.3s;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     height: 50px;
@@ -203,6 +244,10 @@ export const LinkWebsiteCardTwo = styled.a`
   font-size: 18px;
   color: var(--white-color);
 
+    transition:
+    background-color 0.5s,
+    color 0.3s;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     height: 50px;
@@ -224,6 +269,10 @@ export const CardProjectThree = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
+  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -242,6 +291,13 @@ export const CardProjectThree = styled.li`
 
   @media screen and (min-width: 1100px) {
     grid-area: th;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+    max-width: unset;
+    grid-area: unset;
+    margin: 0;
   }
 `;
 export const SvgContainer = styled.div`
@@ -279,6 +335,10 @@ export const LinkCode = styled.a`
   font-size: 18px;
   color: var(--white-color);
 
+    transition:
+    background-color 0.5s,
+    color 0.3s;
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     height: 50px;
@@ -306,6 +366,10 @@ export const LinkWebsite = styled.a`
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
+
+    transition:
+    background-color 0.5s,
+    color 0.3s;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;

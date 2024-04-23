@@ -1,63 +1,22 @@
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import { ButtonContainer, ButtonTeam, ButtonOwn } from './button.styled';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-const Button = ({
-  handleOpenOwnList,
-  handleOpenTeamList,
-}) => {
-  const location = useLocation();
-
-  //got current state ''
-  const [currentPath, setCurrentPath] = useState('');
-
-
-  useEffect(() => {
-    //got ingo with currentPath
-    const storedPath = localStorage.getItem('currentPath');
-
-    //initialization storedPath. Show storedPath or location.pathname
-    const initialPath =
-      storedPath !== null && storedPath !== undefined
-        ? storedPath
-        : location.pathname;
-
-    //update state
-    setCurrentPath(initialPath);
-
-    //write down update state in the localStorage
-    localStorage.setItem('currentPath', initialPath);
-  }, [location.pathname]);
-  
-
-  //path = currentPath. handler = callback function. Will be called after updating the currentPath 
-  const handleClick = (path, handler) => {
-
-    //update state path
-    setCurrentPath(path);
-
-    //write down update state in the localStorage
-    localStorage.setItem('currentPath', path);
-
-    //called handler
-    handler();
-  }
-
-
-
+const Button = ({ activeTab, handleButtonClick}) => {
   return (
     <ButtonContainer>
       <ButtonTeam
-        type="button"
-        active={currentPath === '/team' ? 'true' : 'false'}
-        onClick={() => handleClick('/team', handleOpenTeamList)}
+        to="/projects/team"
+        onClick={() => handleButtonClick('team')}
+        className={activeTab === 'team' ? 'active' : ''}
       >
         Team
       </ButtonTeam>
+
       <ButtonOwn
-        type="button"
-        active={currentPath === '/own' ? 'true' : 'false'}
-        onClick={() => handleClick('/own', handleOpenOwnList)}
+        to="/projects/own"
+        onClick={() => handleButtonClick('own')}
+        className={activeTab === 'own' ? 'active' : ''}
       >
         Own
       </ButtonOwn>
@@ -66,3 +25,30 @@ const Button = ({
 };
 
 export default Button;
+
+
+ //   const location = useLocation();
+
+  //   const storedPath = localStorage.getItem('currentPath');
+
+  //   const initialPath = storedPath ? storedPath !== null || storedPath !== undefined : location.pathname;
+
+  //   const [, setCurrentPath] = useState(initialPath);
+
+  //   const updatePath = (path) => {
+  //     setCurrentPath(path);
+  //     localStorage.setItem('currentPath', path)
+  //   }
+
+  //   useEffect(() => {
+  //     const handleLocationChange = () => {
+  // updatePath(location.pathname)
+  //     }
+
+  //     window.addEventListener('localstate', handleLocationChange);
+
+  //     return () => {
+  //       window.removeEventListener('localstate', handleLocationChange)
+  //     }
+
+  //   },[location.pathname])

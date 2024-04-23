@@ -27,6 +27,13 @@ export const ListContainer = styled.ul`
     margin-left: 34px;
     margin-right: 34px;
   }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 0 0 0;
+  }
 `;
 
 export const TeamList = styled.li`
@@ -70,6 +77,9 @@ export const DeveloperName = styled.h2`
   color: var(--black-color);
   margin-left: 20px;
   cursor: pointer;
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   &:hover {
     color: var(--active-color);
@@ -92,6 +102,9 @@ export const DeveloperLink = styled.a`
   color: var(--hover-link-blue);
   margin-right: 20px;
   cursor: pointer;
+  transition:
+    background-color 0.5s,
+    color 0.3s;
 
   &:hover {
     color: var(--white-color);
