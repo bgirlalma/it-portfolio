@@ -1,8 +1,12 @@
+import ContactsList from "./ContactsList/contactsList";
+import {ContactsContainer, ContactsTitle } from "./Contacts.styled";
+
 const Contacts = () => {
     return (
-        <div>
-<h1>Contacts Page</h1>
-        </div>
+        <ContactsContainer>
+            <ContactsTitle>Contacts</ContactsTitle>
+            <ContactsList/>
+        </ContactsContainer>
     )
 }
 
