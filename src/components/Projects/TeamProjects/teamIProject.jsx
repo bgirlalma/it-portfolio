@@ -1,4 +1,4 @@
-import { HealthyHubSvg } from '../Photo/HealthyHub';
+import { HealthyHubSvg } from '../Photo/healthyhub';
 import tasty from '../Photo/TASTY-TREATS.png';
 import SimpleChocolate from '../Photo/chocolate-dek-2x.jpg'
 import Team from './Team/team';

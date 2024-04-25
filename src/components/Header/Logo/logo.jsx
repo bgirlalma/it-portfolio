@@ -1,4 +1,4 @@
-import Image from './Photo/Akulina.png'
+import Image from './Photo/logo.png'
 import { LogoContainer, LogoImage } from './logo.styled';
 const Logo = () => {
     return (

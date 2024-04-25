@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const LogoContainer = styled.div`
-margin-left: 20px;
 `;
 
 export const LogoImage = styled.img`
-width: 72px;
-height: 72px;
+  width: 120px;
+  height: 50px;
+
+  @media screen and (min-width: 1200px) {
+    width: 160px;
+    height: 70px;
+  }
 `;
