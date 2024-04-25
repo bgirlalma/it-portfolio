@@ -4,6 +4,7 @@ export const LogoContainer = styled.div`
 margin-left: 20px;
 `;
 
-export const LogoTitle = styled.h1`
-color: #fff;
+export const LogoImage = styled.img`
+width: 72px;
+height: 72px;
 `;

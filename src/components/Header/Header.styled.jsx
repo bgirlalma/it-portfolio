@@ -74,6 +74,8 @@ export const CloseButton = styled.button`
   border: none;
   background-color: inherit;
   padding: 0;
+
+  
 `;
 
 export const MenuNav = styled.div`

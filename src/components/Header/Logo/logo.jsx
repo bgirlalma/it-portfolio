@@ -1,10 +1,11 @@
-import {LogoContainer, LogoTitle } from "./logo.styled";
+import Image from './Photo/Akulina.png'
+import { LogoContainer, LogoImage } from './logo.styled';
 const Logo = () => {
     return (
-        <LogoContainer>
-            <LogoTitle>Logo</LogoTitle>
-         </LogoContainer>
-     )
+      <LogoContainer>
+        <LogoImage src={Image} alt="logo" />
+      </LogoContainer>
+    );
 }
 
 export default Logo;

@@ -14,7 +14,14 @@ export const ContactsListContainer = styled.ul`
   }
 
   @media screen and (min-width: 1200px) {
-  flex-direction: unset;
+    width: unset;
+    display: grid;
+    justify-content: center;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: unset;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -31,9 +38,9 @@ export const ContactsItems = styled.li`
 
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 15%,
+    rgba(75, 52, 52, 1) 3%,
     rgba(167, 33, 33, 1) 50%,
-    rgba(0, 0, 0, 1) 89%
+    rgba(68, 5, 5, 1) 100%
   );
   border-radius: 10px;
 
@@ -42,9 +49,15 @@ export const ContactsItems = styled.li`
     font-weight: 500;
     font-size: 28px;
     color: var(--white-color);
+    transition: color 0.5s;
   }
 
-  @media screen and (min-width: 1200px){
-  width: 400px;
+  a:hover {
+    color: var(--hover-link-blue);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 120px;
   }
 `;

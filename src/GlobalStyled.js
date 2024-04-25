@@ -33,7 +33,12 @@ body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   box-sizing: border-box;
-background-color: var(--black-color);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(167, 33, 33, 1) 50%,
+    rgba(0, 0, 0, 1) 89%
+  );
   
 }
 

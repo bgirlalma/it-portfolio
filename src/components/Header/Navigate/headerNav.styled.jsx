@@ -18,10 +18,16 @@ export const ListNavLink = styled(NavLink)`
   font-size: 28px;
   color: var(--black-color);
   text-decoration: none;
+  transition: color 0.5s;
 
   &.${active} {
     color: var(--active-color);
   }
+
+&:hover {
+  color: var(--hover-link-blue);
+}
+
 
   @media screen and (min-width: 568px) {
     font-size: 18px;

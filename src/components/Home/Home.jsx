@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+
 import {
   Container,
   Content,
@@ -17,10 +17,10 @@ const Home = () => {
           <HomeDesc>
             Hi! I`m Alina Akulina, i`m involved in the developmant of websites
             and applications. I have 1.6 years of practical experience. I have
-            experience working in a team and independently. Check out my{' '}
-            <LinkSpan>
-              <NavLink to="/projects">Projects</NavLink>
-            </LinkSpan>
+            experience working in a team and independently. Check out my
+          
+              <LinkSpan to="/projects">Projects</LinkSpan>
+           
           </HomeDesc>
         </Content>
       </Container>
