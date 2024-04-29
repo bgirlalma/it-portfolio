@@ -1,8 +1,8 @@
-import{s as e,N as c,j as o,a as d,r as i,c as p,P as m}from"./index-b3dd9300.js";const h=e.div`
+import{N as c,j as o,a as d,r as i}from"./index-e1b7a49d.js";import{s as r}from"./styled-components.browser.esm-36e5a7f5.js";import m from"./teamIProject-c7026afc.js";import p from"./owmItems-f3d1b9b7.js";const h=r.div`
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-`,s="active",x=e(c)`
+`,s="active",x=r(c)`
   position: relative;
   width: 100px;
   height: 40px;
@@ -49,7 +49,7 @@ import{s as e,N as c,j as o,a as d,r as i,c as p,P as m}from"./index-b3dd9300.js
   @media screen and (min-width: 1000px) {
     height: 50px;
   }
-`,u=e(c)`
+`,u=r(c)`
   width: 100px;
   height: 40px;
 
@@ -84,9 +84,9 @@ import{s as e,N as c,j as o,a as d,r as i,c as p,P as m}from"./index-b3dd9300.js
   @media screen and (min-width: 1000px) {
     height: 50px;
   }
-`,v=({activeTab:n,handleButtonClick:t})=>o.jsxs(h,{children:[o.jsx(x,{to:"/projects/team",onClick:()=>t("team"),className:n==="team"?"active":"",children:"Team"}),o.jsx(u,{to:"/projects/own",onClick:()=>t("own"),className:n==="own"?"active":"",children:"Own"})]}),g=e.h1`
+`,v=({activeTab:e,handleButtonClick:t})=>o.jsxs(h,{children:[o.jsx(x,{to:"/projects/team",onClick:()=>t("team"),className:e==="team"?"active":"",children:"Team"}),o.jsx(u,{to:"/projects/own",onClick:()=>t("own"),className:e==="own"?"active":"",children:"Own"})]}),f=r.h1`
 display: none;
-`,f=()=>{const n=d(),[t,r]=i.useState(location.pathname.includes("own")?"own":"team"),l=a=>{r(a),n(`/projects/${a}`)};return i.useEffect(()=>{location.pathname.includes("projects")||r("team")},[location.pathname]),o.jsxs("div",{children:[o.jsx(g,{children:"Team Projects"}),o.jsx(v,{activeTab:t,handleButtonClick:l}),t==="own"?o.jsx(p,{}):o.jsx(m,{})]})},w=e.div`
+`,g=()=>{const e=d(),[t,n]=i.useState(location.pathname.includes("own")?"own":"team"),l=a=>{n(a),e(`/projects/${a}`)};return i.useEffect(()=>{location.pathname.includes("projects")||n("team")},[location.pathname]),o.jsxs("div",{children:[o.jsx(f,{children:"Team Projects"}),o.jsx(v,{activeTab:t,handleButtonClick:l}),t==="own"?o.jsx(p,{}):o.jsx(m,{})]})},w=r.div`
 
   @media screen and (min-width: 420px) {
     padding: 20px;
@@ -97,4 +97,4 @@ display: none;
     margin-left: auto;
     margin-right: auto;
   }
-`,b=()=>o.jsx(w,{children:o.jsx(f,{})});export{b as default};
+`,N=()=>o.jsx(w,{children:o.jsx(g,{})});export{N as default};
