@@ -1,4 +1,51 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const AnimationCardLeft = keyframes`
+ from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0)
+    opacity: 1;
+`;
+
+const AnimationCardRight = keyframes`
+from{
+  transform: translateX(100%);
+  opacity: 0;
+}
+to{
+  transform: translateX(0);
+  opacity: 1;
+}
+`;
+
+const AnimationCardTop = keyframes`
+from{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+to{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+`;
+
+const AnimationCardBottom = keyframes`
+from{
+  transform: translateY(100%);
+  opacity: 0;
+}
+to{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+`;
+
 
 export const ListContainer = styled.ul`
   @media screen and (min-width: 1100px) {
@@ -29,9 +76,11 @@ export const OwmCardOne = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
-  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
-  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
-  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+
+  animation: ${AnimationCardLeft} 0.9s ease-in-out forwards;
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -44,6 +93,10 @@ export const OwmCardOne = styled.li`
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
   }
 
   @media screen and (min-width: 1100px) {
@@ -55,6 +108,8 @@ export const OwmCardOne = styled.li`
     max-width: unset;
     grid-area: unset;
     margin: 0;
+
+    animation: ${AnimationCardTop} 0.9s ease-in-out forwards;
   }
 `;
 
@@ -156,9 +211,11 @@ export const OwnCardTwo = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
-  box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
-  -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
-  -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+
+  animation: ${AnimationCardRight} 0.9s ease-in-out forwards;
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -171,6 +228,10 @@ export const OwnCardTwo = styled.li`
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
   }
 
   @media screen and (min-width: 1100px) {
@@ -262,9 +323,11 @@ export const OwnCardThree = styled.li`
   background-color: var(--backgroung-cards-color);
   margin-bottom: 20px;
 
-  box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
-  -webkit-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
-  -moz-box-shadow: 3px -1px 11px 6px rgba(0, 249, 255, 1);
+  box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+
+  animation: ${AnimationCardLeft} 0.9s ease-in-out forwards;
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -277,6 +340,10 @@ export const OwnCardThree = styled.li`
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
   }
 
   @media screen and (min-width: 1100px) {
@@ -367,9 +434,11 @@ export const OwnCardFour = styled.li`
   padding: 20px 10px;
   background-color: var(--backgroung-cards-color);
 
-  box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
-  -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
-  -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+  box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 9px rgba(0, 249, 255, 0.75);
+
+  animation: ${AnimationCardRight} 0.9s ease-in-out forwards;
 
   @media screen and (min-width: 568px) {
     display: flex;
@@ -381,6 +450,10 @@ export const OwnCardFour = styled.li`
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -webkit-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
+    -moz-box-shadow: -5px -1px 11px 6px rgba(0, 249, 255, 1);
   }
 
   @media screen and (min-width: 1100px) {
@@ -392,6 +465,8 @@ export const OwnCardFour = styled.li`
     max-width: unset;
     grid-area: unset;
     margin: 0;
+
+    animation: ${AnimationCardBottom} 0.9s ease-in-out forwards;
   }
 `;
 

@@ -43,12 +43,6 @@ export const Card = styled.li`
   border: 1px solid #fff;
   border-radius: 20px;
 
-  transition: transform 0.5s easy;
-
-  &: hover {
-    transform: rotateY(90deg);
-  }
-
   @media screen and (min-width: 1000px) {
     width: 100%;
   }
@@ -61,6 +55,11 @@ export const CardTitle = styled.h3`
   margin-top: 10px;
 
   a {
+    transition: color 0.5s;
     color: var(--white-color);
+  }
+
+  a:hover {
+    color: var(--hover-link-blue);
   }
 `;

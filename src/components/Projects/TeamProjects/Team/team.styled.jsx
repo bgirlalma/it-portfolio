@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const ListContainer = styled.ul`
   padding: 30px 20px 20px 20px;
 
+  //встановлюємо глибину між користувачем та поворотом картки
+  perspective: 1000px;  
+
   @media screen and (min-width: 568px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -38,7 +41,7 @@ export const ListContainer = styled.ul`
 
 export const TeamList = styled.li`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   background-image: linear-gradient(
@@ -49,10 +52,17 @@ export const TeamList = styled.li`
   border-radius: 10px 10px 0 0;
 
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 20px;
+
+  transition: transform 2s;
+  transform-style: preserve-3d;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover{
+    transform: rotateY(180deg);
   }
 
   @media screen and (min-width: 568px) {
@@ -71,12 +81,14 @@ export const TeamList = styled.li`
 `;
 
 export const DeveloperName = styled.h2`
+  position: absolute;
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
   color: var(--black-color);
   margin-left: 20px;
   cursor: pointer;
+  backface-visibility: hidden;
   transition:
     background-color 0.5s,
     color 0.3s;
@@ -96,12 +108,17 @@ export const DeveloperName = styled.h2`
 `;
 
 export const DeveloperLink = styled.a`
+  position: absolute;
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 18px;
   color: var(--hover-link-blue);
   margin-right: 20px;
   cursor: pointer;
+
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+
   transition:
     background-color 0.5s,
     color 0.3s;

@@ -1,13 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
-import ProjectItems from './components/Projects/TeamProjects/teamIProject';
-import OwmItems from './components/Projects/OwmProjects/owmItems';
 
 const Layout = lazy(() => import('./SharedLayout/Layout'));
 const HomePage = lazy(() => import('./pages/HomePage/homepage'));
 const ErrorPage = lazy(() => import('pages/ErrorPage/ErrorPage'));
 const ContactsPage = lazy(() => import('./pages//ContactsPage/contacts'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage/projects'));
+const ProjectItems = lazy(() =>
+  import('./components/Projects/TeamProjects/teamIProject')
+);
+const OwmItems = lazy(() =>
+  import('./components/Projects/OwmProjects/owmItems')
+);
 
 // const test = import.meta.env.VITE_API_TEST;
 
@@ -16,10 +20,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} >
-          <Route path='team' element={<ProjectItems />} />
-          <Route path='own' element={<OwmItems/> } />
-          </Route>
+        <Route path="/projects" element={<ProjectsPage />}>
+          <Route path="team" element={<ProjectItems />} />
+          <Route path="own" element={<OwmItems />} />
+        </Route>
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>

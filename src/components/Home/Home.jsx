@@ -1,4 +1,5 @@
 
+import { lazy } from 'react';
 import {
   Container,
   Content,
@@ -6,7 +7,8 @@ import {
   HomeDesc,
   LinkSpan,
 } from './Home.styled';
-import Stack from './Stack/stack';
+
+const Stack = lazy(() => import('./Stack/stack'));
 
 const Home = () => {
   return (

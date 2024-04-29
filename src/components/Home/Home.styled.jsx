@@ -44,6 +44,7 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
+    position: relative;
     max-width: unset;
     width: 100%;
     height: 700px;
@@ -157,7 +158,7 @@ export const LinkSpan = styled(NavLink)`
   padding: 2px;
   margin-left: 5px;
   border-radius: 10px 5px 10px 5px;
-  transition: color 0.5s background-color 0.5s;
+  transition: background-color 0.3s;
 
   &:hover {
     color: var(--active-color);

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// import MainImage from '../src/components/Image/OIP.jpg'
 
 export const GlobalStyled = createGlobalStyle`
 :root{
@@ -33,12 +32,7 @@ body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   box-sizing: border-box;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(167, 33, 33, 1) 50%,
-    rgba(0, 0, 0, 1) 89%
-  );
+background-color: #080606;
   
 }
 

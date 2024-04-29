@@ -1,9 +1,9 @@
-import Image from './Photo/logo.png'
-import { LogoContainer, LogoImage } from './logo.styled';
+
+import { LogoContainer} from './logo.styled';
 const Logo = () => {
     return (
       <LogoContainer>
-        <LogoImage src={Image} alt="logo" />
+        <h1>Logo</h1>
       </LogoContainer>
     );
 }
