@@ -1,9 +1,13 @@
 
-import { LogoContainer} from './logo.styled';
+import { LogoContainer, LogoTitle} from './logo.styled';
 const Logo = () => {
     return (
       <LogoContainer>
-        <h1>Logo</h1>
+        <div>
+          <LogoTitle>
+            <a href="/">AG</a>
+          </LogoTitle>
+        </div>
       </LogoContainer>
     );
 }

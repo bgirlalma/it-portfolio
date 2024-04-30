@@ -21,7 +21,7 @@ const Home = () => {
             and applications. I have 1.6 years of practical experience. I have
             experience working in a team and independently. Check out my
           
-              <LinkSpan to="/projects">Projects</LinkSpan>
+            <LinkSpan to="/projects">Projects</LinkSpan>
            
           </HomeDesc>
         </Content>

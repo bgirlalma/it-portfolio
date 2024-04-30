@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyled = createGlobalStyle`
 :root{
   --main-font-family: 'Roboto', sans-serif;
+  --logo-font-family: "Sevillana", cursive;
   --black-color: #000;
   --white-color: #f8f8f8;
   --active-color: #E4080A;
@@ -30,7 +31,7 @@ export const GlobalStyled = createGlobalStyle`
 }
 body {
   margin: 0;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif, 'Jacquard 24', system-ui, "Sevillana", cursive;
   box-sizing: border-box;
 background-color: #080606;
   

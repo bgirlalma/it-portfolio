@@ -1,3 +1,4 @@
+import { CallSvg } from "../Photo/call";
 import { GithubSvg } from "../Photo/github";
 import { LinkedinSvg } from "../Photo/linkedin";
 import { MailSvg } from "../Photo/mail";
@@ -14,7 +15,7 @@ const ContactsList = () => {
         </ContactsItems>
         <ContactsItems>
           <ImageContainer>
-           <MailSvg/>
+            <MailSvg />
           </ImageContainer>
           <a href="mailto:almawork@ukr.net">Mail</a>
         </ContactsItems>
@@ -23,6 +24,12 @@ const ContactsList = () => {
             <GithubSvg />
           </ImageContainer>
           <a href="https://github.com/bgirlalma?tab=repositories">GitHub</a>
+        </ContactsItems>
+        <ContactsItems>
+          <ImageContainer>
+            <CallSvg/>
+          </ImageContainer>
+          <a href="tel:380985226279">Phone</a>
         </ContactsItems>
       </ContactsListContainer>
     );
