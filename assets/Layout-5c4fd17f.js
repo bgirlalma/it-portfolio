@@ -1,20 +1,24 @@
-import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";import{s as e,a as u}from"./styled-components.browser.esm-36e5a7f5.js";const f=e.div`
-`;e.img`
-  width: 120px;
-  height: 50px;
-
-  @media screen and (min-width: 1200px) {
-    width: 160px;
-    height: 70px;
+import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-f8748ef7.js";import{s as e,a as u}from"./styled-components.browser.esm-33429efd.js";const f=e.div`
+`,v=e.h1`
+  a {
+    font-family: var(--logo-font-family);
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--active-color);
+    transition: color 0.5s;
   }
-`;const w=()=>n.jsx(f,{children:n.jsx("h1",{children:"Logo"})}),v=e.ul`
+
+  a:hover {
+    color: var(--hover-link-blue);
+  }
+`,w=()=>n.jsx(f,{children:n.jsx("div",{children:n.jsx(v,{children:n.jsx("a",{href:"/",children:"AG"})})})}),j=e.ul`
   display: grid;
   gap: 20px;
 
   @media screen and (min-width: 568px) {
     display: flex;
   }
-`,j="active",l=e(x)`
+`,b="active",d=e(x)`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 28px;
@@ -22,7 +26,7 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";impor
   text-decoration: none;
   transition: color 0.5s;
 
-  &.${j} {
+  &.${b} {
     color: var(--active-color);
   }
 
@@ -39,7 +43,7 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";impor
   @media screen and (min-width: 1000px) {
     font-size: 28px;
   }
-`,h=({handleNavlinkClick:t})=>{const r=p(),i=localStorage.getItem("currentPath"),s=i??r.pathname,[,d]=a.useState(s),c=o=>{d(o),localStorage.setItem("currentPath",o)};return a.useEffect(()=>{const o=()=>{c(r.pathname)};return window.addEventListener("popstate",o),()=>{window.removeEventListener("popstate",o)}},[r.pathname]),n.jsx("nav",{children:n.jsxs(v,{children:[n.jsx("li",{children:n.jsx(l,{to:"/",onClick:()=>t&&t("/"),children:"Home"})}),n.jsx("li",{children:n.jsx(l,{to:"/projects",onClick:()=>t&&t("/projects"),children:"Projects"})}),n.jsx("li",{children:n.jsx(l,{to:"/contacts",onClick:()=>t&&t("/contacts"),children:"Contacts"})})]})})},b=()=>n.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",id:"Outline",viewBox:"0 0 24 24",width:"30",height:"30",fill:"#fff",children:[n.jsx("rect",{y:"11",width:"24",height:"2",rx:"1"}),n.jsx("rect",{y:"4",width:"24",height:"2",rx:"1"}),n.jsx("rect",{y:"18",width:"24",height:"2",rx:"1"})]}),k=()=>n.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",id:"Bold",viewBox:"0 0 24 24",width:"30",height:"30",children:n.jsx("path",{d:"M14.121,12,18,8.117A1.5,1.5,0,0,0,15.883,6L12,9.879,8.11,5.988A1.5,1.5,0,1,0,5.988,8.11L9.879,12,6,15.882A1.5,1.5,0,1,0,8.118,18L12,14.121,15.878,18A1.5,1.5,0,0,0,18,15.878Z"})}),y=e.div`
+`,h=({handleNavlinkClick:o})=>{const r=p(),i=localStorage.getItem("currentPath"),s=i??r.pathname,[,c]=a.useState(s),l=t=>{c(t),localStorage.setItem("currentPath",t)};return a.useEffect(()=>{const t=()=>{l(r.pathname)};return window.addEventListener("popstate",t),()=>{window.removeEventListener("popstate",t)}},[r.pathname]),n.jsx("nav",{children:n.jsxs(j,{children:[n.jsx("li",{children:n.jsx(d,{to:"/",onClick:()=>o&&o("/"),children:"Home"})}),n.jsx("li",{children:n.jsx(d,{to:"/projects",onClick:()=>o&&o("/projects"),children:"Projects"})}),n.jsx("li",{children:n.jsx(d,{to:"/contacts",onClick:()=>o&&o("/contacts"),children:"Contacts"})})]})})},k=()=>n.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",id:"Outline",viewBox:"0 0 24 24",width:"30",height:"30",fill:"#fff",children:[n.jsx("rect",{y:"11",width:"24",height:"2",rx:"1"}),n.jsx("rect",{y:"4",width:"24",height:"2",rx:"1"}),n.jsx("rect",{y:"18",width:"24",height:"2",rx:"1"})]}),y=()=>n.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",id:"Bold",viewBox:"0 0 24 24",width:"30",height:"30",children:n.jsx("path",{d:"M14.121,12,18,8.117A1.5,1.5,0,0,0,15.883,6L12,9.879,8.11,5.988A1.5,1.5,0,1,0,5.988,8.11L9.879,12,6,15.882A1.5,1.5,0,1,0,8.118,18L12,14.121,15.878,18A1.5,1.5,0,0,0,18,15.878Z"})}),L=e.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,9 +70,9 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";impor
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
   }
-`,L=e.div`
+`,C=e.div`
   
-`,C=e.button`
+`,M=e.button`
   border: none;
   background-color: inherit;
   padding: 0;
@@ -77,7 +81,7 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";impor
   @media screen and (min-width: 568px) {
     display: none;
   }
-`,M=e.div`
+`,A=e.div`
   position: fixed;
   width: 100%;
   height: 100%;
@@ -107,17 +111,18 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-e1b7a49d.js";impor
   padding: 0;
 
   
-`,A=e.div`
-margin-top: 40px;
 `,B=e.div`
+margin-top: 40px;
+`,S=e.div`
   display: none;
 
   @media screen and (min-width: 568px) {
     display: flex;
   }
-`,S=()=>{const t=g(),[r,i]=a.useState(!1),s=()=>{i(!0)},d=()=>{i(!1)},c=o=>{t(o),i(!1)};return n.jsxs(y,{children:[n.jsx(w,{}),n.jsxs(L,{children:[n.jsx(C,{onClick:s,children:n.jsx(b,{})}),r&&n.jsxs(M,{children:[n.jsx(E,{onClick:d,children:n.jsx(k,{})}),n.jsx(A,{children:n.jsx(h,{handleNavlinkClick:c})})]})]}),n.jsx(B,{children:n.jsx(h,{})})]})},O=u`
+`,z=()=>{const o=g(),[r,i]=a.useState(!1),s=()=>{i(!0)},c=()=>{i(!1)},l=t=>{o(t),i(!1)};return n.jsxs(L,{children:[n.jsx(w,{}),n.jsxs(C,{children:[n.jsx(M,{onClick:s,children:n.jsx(k,{})}),r&&n.jsxs(A,{children:[n.jsx(E,{onClick:c,children:n.jsx(y,{})}),n.jsx(B,{children:n.jsx(h,{handleNavlinkClick:l})})]})]}),n.jsx(S,{children:n.jsx(h,{})})]})},O=u`
 :root{
   --main-font-family: 'Roboto', sans-serif;
+  --logo-font-family: "Sevillana", cursive;
   --black-color: #000;
   --white-color: #f8f8f8;
   --active-color: #E4080A;
@@ -145,7 +150,7 @@ margin-top: 40px;
 }
 body {
   margin: 0;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif, 'Jacquard 24', system-ui, "Sevillana", cursive;
   box-sizing: border-box;
 background-color: #080606;
   
@@ -179,4 +184,4 @@ p{
   padding: 0;
   margin: 0;
 }
-`,H=()=>n.jsxs(n.Fragment,{children:[n.jsx(S,{}),n.jsx(O,{}),n.jsx(a.Suspense,{fallback:null,children:n.jsx(m,{})})]});export{H as default};
+`,q=()=>n.jsxs(n.Fragment,{children:[n.jsx(z,{}),n.jsx(O,{}),n.jsx(a.Suspense,{fallback:null,children:n.jsx(m,{})})]});export{q as default};

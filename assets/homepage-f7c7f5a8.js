@@ -1,4 +1,4 @@
-import{N as e,r as t,_ as a,j as i}from"./index-e1b7a49d.js";import{s as n}from"./styled-components.browser.esm-36e5a7f5.js";const d="/it-portfolio/assets/my-photo-9259dff4.jpg",o="/it-portfolio/assets/backdrop-87af262a.jpg",p=n.div`
+import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"./styled-components.browser.esm-33429efd.js";const d="/it-portfolio/assets/my-photo-9259dff4.jpg",o="/it-portfolio/assets/backdrop-87af262a.jpg",p=n.div`
   width: 100%;
   height: 400px;
   background-image: url(${o});
@@ -151,7 +151,7 @@ import{N as e,r as t,_ as a,j as i}from"./index-e1b7a49d.js";import{s as n}from"
     color: var(--active-color);
     background-color: var(--hover-link-blue);
   }
-`,h=t.lazy(()=>a(()=>import("./stack-7e7cab53.js"),["assets/stack-7e7cab53.js","assets/index-e1b7a49d.js","assets/index-a6b3472e.css","assets/styled-components.browser.esm-36e5a7f5.js"])),c=()=>i.jsxs(i.Fragment,{children:[i.jsx(p,{children:i.jsxs(r,{children:[i.jsx(x,{children:"Fullstack developer"}),i.jsxs(s,{children:["Hi! I`m Alina Akulina, i`m involved in the developmant of websites and applications. I have 1.6 years of practical experience. I have experience working in a team and independently. Check out my",i.jsx(m,{to:"/projects",children:"Projects"})]})]})}),i.jsx("div",{children:i.jsx(h,{})})]}),l=n.div`
+`,h=t.lazy(()=>a(()=>import("./stack-2a49b134.js"),["assets/stack-2a49b134.js","assets/index-f8748ef7.js","assets/index-a6b3472e.css","assets/styled-components.browser.esm-33429efd.js"])),c=()=>i.jsxs(i.Fragment,{children:[i.jsx(p,{children:i.jsxs(r,{children:[i.jsx(x,{children:"Fullstack developer"}),i.jsxs(s,{children:["Hi! I`m Alina Akulina, i`m involved in the developmant of websites and applications. I have 1.6 years of practical experience. I have experience working in a team and independently. Check out my",i.jsx(m,{to:"/projects",children:"Projects"})]})]})}),i.jsx("div",{children:i.jsx(h,{})})]}),l=n.div`
   @media screen and (min-width: 568px) {
     max-width: 1440px;
     padding: 20px 20px;
