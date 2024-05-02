@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import MyPhoto from './Photo/my-photo.jpg';
 import MyPhotoDesktop from './Photo/backdrop.jpg'
-import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -149,16 +148,46 @@ export const HomeDesc = styled.p`
   }
 `;
 
-export const LinkSpan = styled(NavLink)`
+export const LinkSpan = styled.button`
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  background-color: var(--white-color);
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--hover-link-blue);
+  }
+
+  a {
+    color: var(--link-color);
+    transition: background-color 0.5s;
+  }
+
+  a: hover {
+    color: var(--active-color);
+  }
+`;
+
+export const ButtonCV = styled.button`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   color: var(--link-color);
   background-color: var(--white-color);
-  padding: 2px;
-  margin-left: 5px;
-  border-radius: 10px 5px 10px 5px;
-  transition: background-color 0.3s;
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
 
   &:hover {
     color: var(--active-color);
