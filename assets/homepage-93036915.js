@@ -1,11 +1,11 @@
-import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"./styled-components.browser.esm-33429efd.js";const d="/it-portfolio/assets/my-photo-9259dff4.jpg",o="/it-portfolio/assets/backdrop-87af262a.jpg",p=n.div`
+import{r as t,_ as e,j as i,N as a}from"./index-b172cd65.js";import{s as n}from"./styled-components.browser.esm-136914ba.js";const o="/it-portfolio/assets/my-photo-9259dff4.jpg",r="/it-portfolio/assets/backdrop-87af262a.jpg",d=n.div`
   width: 100%;
   height: 400px;
-  background-image: url(${o});
+  background-image: url(${r});
   background-size: cover;
 
   @media screen and (min-width: 568px) {
-    background-image: url(${d});
+    background-image: url(${o});
     width: 570px;
     height: auto;
     margin-left: auto;
@@ -46,7 +46,7 @@ import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"
     margin-left: unset;
     margin-right: unset;
   }
-`,r=n.div`
+`,p=n.div`
   @media screen and (min-width: 1200px) {
     padding-top: 150px;
   }
@@ -58,7 +58,7 @@ import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"
     left: 20%;
     transform: translate(-20%, -50%)
   }
-`,x=n.h1`
+`,s=n.h1`
   display: flex;
   justify-content: center;
   padding: 80px 40px 0 40px;
@@ -91,7 +91,7 @@ import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"
       padding-top: 0;
     }
   }
-`,s=n.p`
+`,x=n.p`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
@@ -136,26 +136,54 @@ import{N as e,r as t,_ as a,j as i}from"./index-f8748ef7.js";import{s as n}from"
     max-width: 940px;
    
   }
-`,m=n(e)`
+`,c=n.button`
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  background-color: var(--white-color);
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--hover-link-blue);
+  }
+
+  a {
+    color: var(--link-color);
+    transition: background-color 0.5s;
+  }
+
+  a: hover {
+    color: var(--active-color);
+  }
+`,h=n.button`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   color: var(--link-color);
   background-color: var(--white-color);
-  padding: 2px;
-  margin-left: 5px;
-  border-radius: 10px 5px 10px 5px;
-  transition: background-color 0.3s;
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
 
   &:hover {
     color: var(--active-color);
     background-color: var(--hover-link-blue);
   }
-`,h=t.lazy(()=>a(()=>import("./stack-2a49b134.js"),["assets/stack-2a49b134.js","assets/index-f8748ef7.js","assets/index-a6b3472e.css","assets/styled-components.browser.esm-33429efd.js"])),c=()=>i.jsxs(i.Fragment,{children:[i.jsx(p,{children:i.jsxs(r,{children:[i.jsx(x,{children:"Fullstack developer"}),i.jsxs(s,{children:["Hi! I`m Alina Akulina, i`m involved in the developmant of websites and applications. I have 1.6 years of practical experience. I have experience working in a team and independently. Check out my",i.jsx(m,{to:"/projects",children:"Projects"})]})]})}),i.jsx("div",{children:i.jsx(h,{})})]}),l=n.div`
+`,m=t.lazy(()=>e(()=>import("./stack-c5cb00f0.js"),["assets/stack-c5cb00f0.js","assets/index-b172cd65.js","assets/index-a6b3472e.css","assets/styled-components.browser.esm-136914ba.js"])),l=()=>i.jsxs(i.Fragment,{children:[i.jsx(d,{children:i.jsxs(p,{children:[i.jsx(s,{children:"Fullstack developer"}),i.jsxs(x,{children:["Hi! I`m Alina Akulina, i`m involved in the developmant of websites and applications. I have 1.6 years of practical experience. I have experience working in a team and independently. Check out my",i.jsxs("div",{children:[i.jsx(c,{children:i.jsx(a,{to:"/projects",children:"Projects"})}),i.jsx(h,{children:"CV"})]})]})]})}),i.jsx("div",{children:i.jsx(m,{})})]}),g=n.div`
   @media screen and (min-width: 568px) {
     max-width: 1440px;
     padding: 20px 20px;
     margin-left: auto;
     margin-right: auto;
   }
-`,w=()=>i.jsx(l,{children:i.jsx(c,{})});export{w as default};
+`,w=()=>i.jsx(g,{children:i.jsx(l,{})});export{w as default};
