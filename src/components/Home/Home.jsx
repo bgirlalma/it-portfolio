@@ -26,7 +26,7 @@ const Home = () => {
   function handleCVButtonClick() {
 
     //open file in the new window
-    window.open('/src/PDF/CV.pdf', '_blank');
+    window.open('/it-portfolio/src/PDF/CV.pdf', '_blank');
   }
   return (
     <>
