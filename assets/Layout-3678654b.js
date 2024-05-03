@@ -1,4 +1,4 @@
-import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-b172cd65.js";import{s as e,a as u}from"./styled-components.browser.esm-136914ba.js";const f=e.div`
+import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-3647ac0a.js";import{s as e,a as u}from"./styled-components.browser.esm-00ae6082.js";const f=e.div`
 `,v=e.h1`
   a {
     font-family: var(--logo-font-family);
@@ -11,7 +11,7 @@ import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-b172cd65.js";impor
   a:hover {
     color: var(--hover-link-blue);
   }
-`,w=()=>n.jsx(f,{children:n.jsx("div",{children:n.jsx(v,{children:n.jsx("a",{href:"/",children:"AG"})})})}),j=e.ul`
+`,w=()=>n.jsx(f,{children:n.jsx("div",{children:n.jsx(v,{children:n.jsx("a",{href:"#",children:"AG"})})})}),j=e.ul`
   display: grid;
   gap: 20px;
 
