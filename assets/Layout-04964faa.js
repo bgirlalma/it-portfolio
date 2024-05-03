@@ -1,4 +1,4 @@
-import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-3647ac0a.js";import{s as e,a as u}from"./styled-components.browser.esm-00ae6082.js";const f=e.div`
+import{j as n,N as x,u as p,r as a,a as g,O as m}from"./index-8de0dca2.js";import{s as e,a as u}from"./styled-components.browser.esm-bf355c35.js";const f=e.div`
 `,v=e.h1`
   a {
     font-family: var(--logo-font-family);
