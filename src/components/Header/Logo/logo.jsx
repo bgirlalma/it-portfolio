@@ -5,7 +5,7 @@ const Logo = () => {
       <LogoContainer>
         <div>
           <LogoTitle>
-            <a href="/">AG</a>
+            <a href="#">AG</a>
           </LogoTitle>
         </div>
       </LogoContainer>

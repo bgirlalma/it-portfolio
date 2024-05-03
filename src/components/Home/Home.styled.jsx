@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import MyPhoto from './Photo/my-photo.jpg';
 import MyPhotoDesktop from './Photo/backdrop.jpg'
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 568px) {
     background-image: url(${MyPhoto});
-    width: 570px;
+    width: calc(100% - 20px);
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -18,27 +19,27 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 600px) {
-    width: 600px;
-    height: 300px;
+    width: calc(100% - 20px);
+    height: 320px;
   }
 
   @media screen and (min-width: 700px) {
-    width: 690px;
+    width: calc(100% - 20px);
     height: 350px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: calc(100% - 20px);
     height: 400px;
   }
 
   @media screen and (min-width: 1000px) {
-    width: 960px;
+    width: calc(100% - 20px);
     height: 500px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1160px;
+    width: calc(100% - 20px);
     height: 600px;
   }
 
@@ -107,7 +108,7 @@ export const HomeDesc = styled.p`
   font-size: 20px;
   color: var(--white-color);
   margin: 40px 0 0 0;
-  padding: 0 40px 20px 40px;
+  padding: 0 40px 0 40px;
 
   @media screen and (min-width: 470px) {
     max-width: 480px;
@@ -118,7 +119,7 @@ export const HomeDesc = styled.p`
   @media screen and (min-width: 568px) {
     max-width: 380px;
     margin: 20px 0 0 0;
-    padding: 0 0 20px 40px;
+    padding: 0 0 30px 40px;
     margin-left: unset;
     margin-right: unset;
   }
@@ -148,41 +149,58 @@ export const HomeDesc = styled.p`
   }
 `;
 
-export const LinkSpan = styled.button`
+export const LinkContainer = styled.div`
+  margin-top: 40px;
+  padding: 0 40px;
+
+  @media screen and (min-width: 470px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 568px) {
+    max-width: 380px;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    padding-left: 100px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-top: 40px;
+    padding-left: 80px;
+  }
+`;
+
+export const LinkSpan = styled(NavLink)`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   background-color: var(--white-color);
-  width: 100px;
-  height: 40px;
-  margin-top: 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   transition: background-color 0.5s;
+  color: var(--link-color);
   cursor: pointer;
 
   &:hover {
-    background-color: var(--hover-link-blue);
-  }
-
-  a {
-    color: var(--link-color);
-    transition: background-color 0.5s;
-  }
-
-  a: hover {
     color: var(--active-color);
+    background-color: var(--hover-link-blue);
   }
 `;
 
-export const ButtonCV = styled.button`
+export const ButtonCV = styled.a`
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   color: var(--link-color);
   background-color: var(--white-color);
-  width: 100px;
-  height: 40px;
+  padding: 10px 40px;
   margin-left: 20px;
   border: none;
   border-radius: 5px;
