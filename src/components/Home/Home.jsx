@@ -1,4 +1,3 @@
-
 import { lazy } from 'react';
 import {
   Container,
@@ -7,11 +6,11 @@ import {
   HomeDesc,
   LinkSpan,
   LinkContainer,
-  ButtonCV
+  ButtonCV,
 } from './Home.styled';
 import { pdfjs } from 'react-pdf';
 
-//configuring the file path pdf.worker.min.js. Use for proccessing file PDF client-side. 
+//configuring the file path pdf.worker.min.js. Use for proccessing file PDF client-side.
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
 
@@ -22,11 +21,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const Stack = lazy(() => import('./Stack/stack'));
 
 const Home = () => {
-  
   function handleCVButtonClick() {
-
+    const pdfurl = import.meta.env.VITE_PDF_URL;
+    
     //open file in the new window
-    window.open('/it-portfolio/src/PDF/CV.pdf', '_blank');
+    window.open(pdfurl, '_blank');
   }
   return (
     <>
@@ -42,9 +41,7 @@ const Home = () => {
           <LinkContainer>
             <LinkSpan to="/projects">Projects</LinkSpan>
 
-            <ButtonCV onClick={handleCVButtonClick} >
-              CV
-            </ButtonCV>
+            <ButtonCV onClick={handleCVButtonClick}>CV</ButtonCV>
           </LinkContainer>
         </Content>
       </Container>

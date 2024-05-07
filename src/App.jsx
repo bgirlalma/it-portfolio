@@ -13,8 +13,6 @@ const OwmItems = lazy(() =>
   import('./components/Projects/OwmProjects/owmItems')
 );
 
-// const test = import.meta.env.VITE_API_TEST;
-
 function App() {
   return (
     <Routes>
