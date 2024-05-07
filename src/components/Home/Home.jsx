@@ -22,8 +22,9 @@ const Stack = lazy(() => import('./Stack/stack'));
 
 const Home = () => {
   function handleCVButtonClick() {
-    const pdfurl = import.meta.env.VITE_PDF_URL;
-    
+    const pdfurl =
+      'https://firebasestorage.googleapis.com/v0/b/my-portfolio-4bd41.appspot.com/o/Alina%20Akulina%20Summary.pdf?alt=media&token=be6092bd-6206-4b2f-8db5-cdfdb04b0fa2';
+
     //open file in the new window
     window.open(pdfurl, '_blank');
   }
