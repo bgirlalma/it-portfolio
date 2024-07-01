@@ -17,6 +17,7 @@ export const GlobalStyled = createGlobalStyle`
   --link-dark: #1e1823;
   --link-turquoise-color: #40e0d0;
   --link-grey-color: #9fbaae;
+  --link-green-color: 
 
   --hover-link-white: #FABBBB;
   --hover-link-dark: #6B28A2;
@@ -26,6 +27,7 @@ export const GlobalStyled = createGlobalStyle`
   --hover-link-blue: #3A32F9;
   --hover-link-turqoise: #5A948E;
   --hover-grey-color: #45E59E;
+
 
   --backgroung-cards-color: #413E3E;
 }

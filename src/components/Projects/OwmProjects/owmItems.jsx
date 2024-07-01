@@ -2,6 +2,7 @@ import webstudio from '../Photo/hero-dek-2x.jpg';
 import BookApp from '../Photo/book-app.png';
 import Rio from '../Photo/rio.png';
 import LearnLingo from '../Photo/LearnLingo.png';
+import Portfolio from '../Photo/portfolio-dance.jpg';
 import {
   ListContainer,
   OwmCardOne,
@@ -12,18 +13,20 @@ import {
   ButtonLinkWebsiteOne,
   OwnCardTwo,
   ButtonLinkCodeTwo,
-    ButtonLinkWebsiteTwo,
-    OwnCardThree,
-    ButtonLinkCodeThree,
+  ButtonLinkWebsiteTwo,
+  OwnCardThree,
+  ButtonLinkCodeThree,
   ButtonLinkWebsiteThree,
   OwnCardFour,
   ButtonLinkCodeFour,
   ButtonLinkWebsiteFour,
+  OwnCardFive,
+  ButtonLinkCodeFive,
+  ButtonLinkWebsiteFive,
   OwnDesc,
 } from './owmItems.styled';
 
 const OwmItems = () => {
-
   return (
     <ListContainer>
       {/* card one start */}
@@ -34,13 +37,21 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            
-              <ButtonLinkCodeOne href="https://github.com/bgirlalma/goit-markup-hw-07" target="_blank" rel="noopener noreferrer">Code</ButtonLinkCodeOne>
-          
-              <ButtonLinkWebsiteOne href="https://bgirlalma.github.io/goit-markup-hw-07/" target="_blank" rel="noopener noreferrer">
-                Website
-              </ButtonLinkWebsiteOne>
-        
+            <ButtonLinkCodeOne
+              href="https://github.com/bgirlalma/goit-markup-hw-07"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeOne>
+
+            <ButtonLinkWebsiteOne
+              href="https://bgirlalma.github.io/goit-markup-hw-07/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteOne>
           </ButtonLinkContainer>
         </div>
 
@@ -50,6 +61,7 @@ const OwmItems = () => {
           created with HTML, CSS and JS.
         </OwnDesc>
       </OwmCardOne>
+      {/* card one end */}
 
       {/* card two start */}
       <OwnCardTwo>
@@ -66,18 +78,25 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            
-              <ButtonLinkCodeTwo href="https://github.com/bgirlalma/goit-react-hw-08-phonebook" target="_blank" rel="noopener noreferrer">
-                Code
-              </ButtonLinkCodeTwo>
-            
-              <ButtonLinkWebsiteTwo href="https://bgirlalma.github.io/goit-react-hw-08-phonebook/" target="_blank" rel="noopener noreferrer">
-                Website
-              </ButtonLinkWebsiteTwo>
-          
+            <ButtonLinkCodeTwo
+              href="https://github.com/bgirlalma/goit-react-hw-08-phonebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeTwo>
+
+            <ButtonLinkWebsiteTwo
+              href="https://bgirlalma.github.io/goit-react-hw-08-phonebook/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteTwo>
           </ButtonLinkContainer>
         </div>
       </OwnCardTwo>
+      {/* card two end */}
 
       {/* card three start */}
       <OwnCardThree>
@@ -87,16 +106,21 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-            
-              <ButtonLinkCodeThree href="https://github.com/bgirlalma/apartment-renovetion-website" target="_blank" rel="noopener noreferrer">
-                Code
-              </ButtonLinkCodeThree>
-          
-            
-              <ButtonLinkWebsiteThree href="https://bgirlalma.github.io/apartment-renovetion-website/" target="_blank" rel="noopener noreferrer">
-                Website
-              </ButtonLinkWebsiteThree>
-          
+            <ButtonLinkCodeThree
+              href="https://github.com/bgirlalma/apartment-renovetion-website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeThree>
+
+            <ButtonLinkWebsiteThree
+              href="https://bgirlalma.github.io/apartment-renovetion-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteThree>
           </ButtonLinkContainer>
         </div>
 
@@ -107,6 +131,7 @@ const OwmItems = () => {
           Node, LightBox2, MongoDB, Swiper.
         </OwnDesc>
       </OwnCardThree>
+      {/* card three end */}
 
       {/* card four start */}
       <OwnCardFour>
@@ -125,16 +150,63 @@ const OwmItems = () => {
           </ImageContainer>
 
           <ButtonLinkContainer>
-          
-              <ButtonLinkCodeFour href="https://github.com/bgirlalma/test-exercise-teacher-project" target="_blank" rel="noopener noreferrer">
-                Code
-              </ButtonLinkCodeFour>
-          
-              <ButtonLinkWebsiteFour href="#" target="_blank" rel="noopener noreferrer">Website</ButtonLinkWebsiteFour>
-          
+            <ButtonLinkCodeFour
+              href="https://github.com/bgirlalma/test-exercise-teacher-project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeFour>
+
+            <ButtonLinkWebsiteFour
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteFour>
           </ButtonLinkContainer>
         </div>
       </OwnCardFour>
+      {/* card four end */}
+
+      {/* card five start */}
+      <OwnCardFive>
+        <div>
+          <ImageContainer>
+            <Image
+              src={Portfolio}
+              alt="Dance Portfolio"
+              width="250"
+              height="140"
+            />
+          </ImageContainer>
+
+          <ButtonLinkContainer>
+            <ButtonLinkCodeFive
+              href="https://github.com/bgirlalma/dance-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeFive>
+            <ButtonLinkWebsiteFive
+              href="https://bgirlalma.github.io/dance-portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteFive>
+          </ButtonLinkContainer>
+        </div>
+        <OwnDesc>
+          Dance Portfolio. I created my dance portfolio to archive and showcase
+          videos, photos, and the achievements of my students in various
+          championships. This portfolio serves as a vital tool for communication
+          with potential employers, demonstrating the progress and success of my
+          teaching methods.
+        </OwnDesc>
+      </OwnCardFive>
     </ListContainer>
   );
 };
