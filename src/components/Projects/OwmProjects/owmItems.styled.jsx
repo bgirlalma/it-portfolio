@@ -586,7 +586,7 @@ export const OwnCardFive = styled.li`
   }
 `;
 
-export const ButtonLinkCodeFive = styled.button`
+export const ButtonLinkCodeFive = styled.a`
   width: 70px;
   height: 40px;
 
@@ -623,7 +623,7 @@ export const ButtonLinkCodeFive = styled.button`
   }
 `;
 
-export const ButtonLinkWebsiteFive = styled.button`
+export const ButtonLinkWebsiteFive = styled.a`
   width: 80px;
   height: 40px;
 

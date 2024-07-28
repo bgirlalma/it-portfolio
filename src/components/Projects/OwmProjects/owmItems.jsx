@@ -21,8 +21,8 @@ import {
   ButtonLinkCodeFour,
   ButtonLinkWebsiteFour,
   OwnCardFive,
-  // ButtonLinkCodeFive,
-  // ButtonLinkWebsiteFive,
+  ButtonLinkCodeFive,
+  ButtonLinkWebsiteFive,
   OwnDesc,
 } from './owmItems.styled';
 
@@ -177,13 +177,26 @@ const OwmItems = () => {
             <Image
               src={Portfolio}
               alt="Dance Portfolio"
-              width="250"
+              width="270"
               height="140"
             />
           </ImageContainer>
 
           <ButtonLinkContainer>
-           
+            <ButtonLinkCodeFive
+              href="https://github.com/bgirlalma/dance-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code
+            </ButtonLinkCodeFive>
+            <ButtonLinkWebsiteFive
+              href="https://bgirlalma.github.io/dance-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </ButtonLinkWebsiteFive>
           </ButtonLinkContainer>
         </div>
         <OwnDesc>
