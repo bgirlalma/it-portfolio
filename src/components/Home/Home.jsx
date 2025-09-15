@@ -23,7 +23,7 @@ const Stack = lazy(() => import('./Stack/stack'));
 const Home = () => {
   function handleCVButtonClick() {
     const pdfurl =
-      'https://firebasestorage.googleapis.com/v0/b/my-portfolio-4bd41.appspot.com/o/Alina%20Akulina%20Summary.pdf?alt=media&token=be6092bd-6206-4b2f-8db5-cdfdb04b0fa2';
+      "https://firebasestorage.googleapis.com/v0/b/my-portfolio-4bd41.appspot.com/o/Alina%20Akulina%20(%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5).pdf?alt=media&token=2b182489-6848-4b5d-a3ca-18093de6968c";
 
     //open file in the new window
     window.open(pdfurl, '_blank');
